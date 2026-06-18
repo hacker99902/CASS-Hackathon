@@ -65,7 +65,7 @@ export interface SiteConfig {
   description: string;
   registrationUrl: string;
   contactEmail: string;
-  contactPhone: string;        // ← add this line
+  contactPhone: string; 
   socialLinks: {
     linkedin: string;
     twitter: string;
