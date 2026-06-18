@@ -44,6 +44,12 @@ const fadeItem = {
   visible: { opacity: 1, y: 0 },
 };
 
+const highlights = [
+  { emoji: "🎓", text: "Open to undergraduate and postgraduate engineering students" },
+  { emoji: "🧑‍🏫", text: "Mentorship from IEEE industry and academic experts" },
+  { emoji: "🛠️", text: "Hands-on problem solving with real evaluation datasets" },
+];
+
 export default function About() {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
@@ -64,27 +70,31 @@ export default function About() {
                 transition={{ duration: 0.6, delay: i * 0.1, ease: "easeOut" }}
               >
                 {key === "label" && <span className="sectionLabel">About the Event</span>}
-                {key === "heading" && <h2 className="sectionHeading" style={{ marginTop: "16px" }}>Where Engineering Meets Real Impact</h2>}
+                {key === "heading" && (
+                  <h2 className="sectionHeading" style={{ marginTop: "16px" }}>
+                    Where Engineering Meets Real Impact
+                  </h2>
+                )}
                 {key === "desc1" && (
                   <p className={styles.description}>
-                    IEEE CASS Hackathon 2026 is a 24-hour national-level hackathon organized by the IEEE Circuits and Systems Society. We bring together the brightest engineering minds to tackle critical challenges in embedded systems, IoT, signal processing, and AI.
+                    IEEE CASS Hackathon 2026 is a national-level hackathon organized by the IEEE
+                    Circuits and Systems Society. We bring together the brightest engineering minds
+                    to tackle critical challenges in embedded systems, IoT, signal processing, and AI.
                   </p>
                 )}
                 {key === "desc2" && (
                   <p className={styles.description} style={{ marginTop: 0 }}>
-                    Participants work in focused teams, guided by industry mentors, to build functional prototypes addressing real-world problems. This is not just a competition — it is a launchpad.
+                    Participants work in focused teams, guided by industry mentors, to build
+                    functional prototypes addressing real-world problems. This is not just a
+                    competition — it is a launchpad.
                   </p>
                 )}
                 {key === "highlights" && (
                   <div className={styles.highlight}>
-                    {[
-                      "Open to undergraduate and postgraduate engineering students",
-                      "Mentorship from IEEE industry and academic experts",
-                      "Hands-on problem solving with real evaluation datasets",
-                    ].map((item) => (
-                      <div className={styles.highlightItem} key={item}>
-                        <span className={styles.bullet} aria-hidden="true" />
-                        {item}
+                    {highlights.map((item) => (
+                      <div className={styles.highlightItem} key={item.text}>
+                        <span className={styles.emoji} aria-hidden="true">{item.emoji}</span>
+                        {item.text}
                       </div>
                     ))}
                   </div>
@@ -95,21 +105,23 @@ export default function About() {
 
           {/* Stats column */}
           <div className={styles.statsCol} ref={ref}>
-            {siteConfig.stats.map((stat, i) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={inView ? { opacity: 1, scale: 1 } : {}}
-                transition={{ duration: 0.5, delay: i * 0.08, ease: "easeOut" }}
-              >
-                <StatCard
-                  value={stat.value}
-                  suffix={stat.suffix}
-                  label={stat.label}
-                  started={inView}
-                />
-              </motion.div>
-            ))}
+            <div className={styles.statsGrid}>
+              {siteConfig.stats.map((stat, i) => (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={inView ? { opacity: 1, scale: 1 } : {}}
+                  transition={{ duration: 0.5, delay: i * 0.08, ease: "easeOut" }}
+                >
+                  <StatCard
+                    value={stat.value}
+                    suffix={stat.suffix}
+                    label={stat.label}
+                    started={inView}
+                  />
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
