@@ -1,0 +1,174 @@
+.prizes {
+  background: var(--bg-base);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-12);
+}
+
+.header .sectionSubtext {
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: var(--space-5);
+  align-items: end;
+  margin-bottom: var(--space-10);
+}
+
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-3);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.card:hover {
+  border-color: var(--border-default);
+  box-shadow: var(--shadow-card);
+}
+
+.cardWinner {
+  background: linear-gradient(160deg, var(--bg-elevated) 0%, var(--bg-surface) 100%);
+  border-color: rgba(0, 111, 239, 0.3);
+  padding: var(--space-12) var(--space-8);
+}
+
+.cardWinner:hover {
+  border-color: rgba(0, 111, 239, 0.5);
+  box-shadow: 0 0 60px rgba(0, 111, 239, 0.12), var(--shadow-elevated);
+}
+
+.iconWrap {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-2);
+}
+
+.iconWrapWinner {
+  background: rgba(0, 111, 239, 0.15);
+  color: var(--ieee-blue-bright);
+  width: 60px;
+  height: 60px;
+}
+
+.iconWrapRunner {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-secondary);
+}
+
+.rank {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.rankWinner {
+  color: var(--ieee-blue-bright);
+}
+
+.amount {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.amountWinner {
+  font-size: clamp(36px, 5vw, 52px);
+  background: linear-gradient(135deg, var(--ieee-blue-bright) 0%, var(--cyan) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.prizeLabel {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.divider {
+  width: 32px;
+  height: 1px;
+  background: var(--border-default);
+  margin: var(--space-2) auto;
+}
+
+/* Benefits */
+.benefits {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+}
+
+.benefitsTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: var(--space-6);
+  letter-spacing: -0.01em;
+}
+
+.benefitsList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  list-style: none;
+}
+
+.benefitItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 14px;
+  color: var(--text-secondary);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  padding: 8px 16px;
+}
+
+.benefitDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--ieee-blue);
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    align-items: unset;
+  }
+
+  .cardWinner {
+    order: -1;
+    padding: var(--space-8) var(--space-6);
+  }
+
+  .benefitsList {
+    gap: var(--space-2);
+  }
+}

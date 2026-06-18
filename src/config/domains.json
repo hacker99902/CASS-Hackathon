@@ -1,0 +1,248 @@
+[
+  {
+    "id": "domain-1",
+    "title": "Embedded Systems & IoT",
+    "shortDescription": "Design intelligent hardware-software systems that interact with the physical world. From edge computing to sensor networks, build solutions that bridge silicon and reality.",
+    "color": "#006FEE",
+    "problemStatements": [
+      {
+        "id": "d1-p1",
+        "title": "Predictive Maintenance for Industrial Machinery",
+        "description": "Industrial downtime costs billions annually. Design an embedded system that monitors vibration, temperature, and current draw of rotating machinery in real time to predict failure before it occurs.",
+        "objectives": [
+          "Develop a low-power embedded data acquisition unit using a microcontroller of your choice",
+          "Implement signal processing algorithms to extract meaningful features from raw sensor data",
+          "Build a lightweight on-device ML inference engine for anomaly detection",
+          "Design a dashboard for plant operators showing health scores and predicted time-to-failure"
+        ],
+        "deliverables": [
+          "Functional prototype with at least three sensor modalities",
+          "Documented firmware source code with unit tests",
+          "A trained model with accuracy benchmarks on a provided test dataset",
+          "A two-page technical report describing architecture decisions"
+        ],
+        "evaluationCriteria": [
+          "Prediction accuracy on the evaluation dataset (30%)",
+          "Power consumption and hardware efficiency (25%)",
+          "Code quality and documentation (25%)",
+          "Presentation and demo clarity (20%)"
+        ]
+      },
+      {
+        "id": "d1-p2",
+        "title": "Smart Agriculture Water Management",
+        "description": "Water scarcity is a growing crisis. Build an IoT-based precision irrigation system that monitors soil moisture, weather conditions, and crop type to optimize water usage at the field level.",
+        "objectives": [
+          "Deploy a wireless sensor network across a simulated field layout",
+          "Implement a central controller that aggregates data and makes irrigation decisions",
+          "Integrate a weather API to factor in forecasted rainfall",
+          "Build a farmer-facing mobile-friendly interface for remote monitoring"
+        ],
+        "deliverables": [
+          "Working prototype with minimum four sensor nodes",
+          "Backend server for data aggregation and decision logic",
+          "Documented API and system architecture diagram",
+          "Live demo on a test bed or simulated environment"
+        ],
+        "evaluationCriteria": [
+          "System reliability and uptime during demo (30%)",
+          "Water saving efficiency demonstrated (25%)",
+          "UI/UX of the monitoring interface (25%)",
+          "Scalability of the proposed architecture (20%)"
+        ]
+      },
+      {
+        "id": "d1-p3",
+        "title": "Low-Power Indoor Positioning System",
+        "description": "GPS fails indoors. Design a sub-meter accurate indoor positioning system using BLE, UWB, or visible light communication for use in hospitals, warehouses, or campuses.",
+        "objectives": [
+          "Prototype an anchor and tag hardware setup",
+          "Implement a trilateration or fingerprinting algorithm for position estimation",
+          "Achieve positioning error under 1.5 meters in a test environment",
+          "Demonstrate a real-time map view showing tag positions"
+        ],
+        "deliverables": [
+          "Hardware prototype with at least three anchors and one tracked tag",
+          "Position calculation algorithm source code",
+          "Accuracy report with CDF plot of positioning error",
+          "Use-case demonstration in a defined scenario"
+        ],
+        "evaluationCriteria": [
+          "Positioning accuracy and consistency (35%)",
+          "Power consumption of the tag unit (25%)",
+          "Practicality and scalability of deployment (25%)",
+          "Demo execution and documentation (15%)"
+        ]
+      },
+      {
+        "id": "d1-p4",
+        "title": "Edge AI for Real-Time Fall Detection",
+        "description": "Falls are the leading cause of injury among the elderly. Build an edge-deployed wearable that detects falls in real time using IMU data and immediately notifies caregivers.",
+        "objectives": [
+          "Design or select a wearable form factor with an IMU sensor",
+          "Train and quantize a neural network for fall vs non-fall classification",
+          "Deploy the model on a microcontroller with under 100ms inference latency",
+          "Implement an alert pipeline via BLE or Wi-Fi to a caregiver's device"
+        ],
+        "deliverables": [
+          "Wearable prototype or functional simulation",
+          "Trained and quantized model with confusion matrix",
+          "Latency benchmark report",
+          "End-to-end demo from fall event to caregiver notification"
+        ],
+        "evaluationCriteria": [
+          "Classification accuracy and false alarm rate (35%)",
+          "Inference latency and power profile (25%)",
+          "Wearability and form factor design (20%)",
+          "Reliability of the alert pipeline (20%)"
+        ]
+      },
+      {
+        "id": "d1-p5",
+        "title": "Autonomous Line-Following Robot with Obstacle Intelligence",
+        "description": "Extend the classic line-follower into an intelligent autonomous unit. The robot must navigate a defined track, handle intersections, avoid dynamic obstacles, and optimize its lap time.",
+        "objectives": [
+          "Build a line-following chassis with PID-based motor control",
+          "Add ultrasonic or IR obstacle detection with avoidance maneuvers",
+          "Implement intersection decision logic based on external signals or onboard state",
+          "Log telemetry for post-run analysis"
+        ],
+        "deliverables": [
+          "Physical robot prototype",
+          "Firmware source code with documented state machine",
+          "Telemetry log from a timed run",
+          "Short video demonstration of a full track run"
+        ],
+        "evaluationCriteria": [
+          "Track completion time and accuracy (35%)",
+          "Obstacle handling success rate (30%)",
+          "Code architecture and modularity (20%)",
+          "Build quality and documentation (15%)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "domain-2",
+    "title": "Signal Processing & AI",
+    "shortDescription": "Harness data, signals, and intelligence to solve problems in healthcare, communications, and beyond. Build systems that extract meaning from noise.",
+    "color": "#17C5A2",
+    "problemStatements": [
+      {
+        "id": "d2-p1",
+        "title": "Arrhythmia Detection from ECG Signals",
+        "description": "Cardiovascular disease is the world's leading cause of death. Build a signal processing and ML pipeline that accurately detects arrhythmia patterns from raw ECG recordings.",
+        "objectives": [
+          "Preprocess ECG signals including noise filtering and baseline correction",
+          "Implement a QRS detection algorithm and extract time-domain features",
+          "Train a classifier on a provided labelled ECG dataset",
+          "Deploy the pipeline as a web or desktop tool for clinical review"
+        ],
+        "deliverables": [
+          "Signal processing and feature extraction pipeline",
+          "Trained classifier with precision, recall, and F1 metrics",
+          "Interactive visualization of flagged arrhythmia segments",
+          "Technical documentation and model card"
+        ],
+        "evaluationCriteria": [
+          "Classifier performance on held-out test data (35%)",
+          "Signal processing quality and noise robustness (25%)",
+          "Usability of the review interface (20%)",
+          "Documentation and reproducibility (20%)"
+        ]
+      },
+      {
+        "id": "d2-p2",
+        "title": "Noise-Robust Speech Enhancement for Telemedicine",
+        "description": "Poor audio quality during teleconsultations leads to misdiagnosis. Design a real-time speech enhancement system that suppresses ambient noise while preserving clinical speech quality.",
+        "objectives": [
+          "Implement a spectral subtraction or deep-learning based noise suppression algorithm",
+          "Evaluate performance using PESQ and STOI metrics on a noisy speech dataset",
+          "Achieve real-time processing on a CPU with under 20ms added latency",
+          "Build a demo interface for side-by-side comparison of raw and enhanced audio"
+        ],
+        "deliverables": [
+          "Enhancement algorithm source code",
+          "Benchmark report with PESQ and STOI scores",
+          "Real-time demo application",
+          "Analysis of trade-offs between latency and quality"
+        ],
+        "evaluationCriteria": [
+          "Objective quality metrics on the evaluation set (35%)",
+          "Real-time performance and latency (25%)",
+          "Demo quality and ease of use (25%)",
+          "Depth of technical analysis (15%)"
+        ]
+      },
+      {
+        "id": "d2-p3",
+        "title": "Multi-Speaker Diarization for Meeting Transcripts",
+        "description": "Who said what? Build an automated speaker diarization system that segments and labels an audio recording by speaker identity, enabling accurate meeting transcription.",
+        "objectives": [
+          "Implement voice activity detection to isolate speech segments",
+          "Extract speaker embeddings using a pre-trained or custom model",
+          "Cluster segments into per-speaker timelines",
+          "Generate a timestamped diarized transcript"
+        ],
+        "deliverables": [
+          "Full diarization pipeline source code",
+          "Diarization Error Rate (DER) on a provided evaluation set",
+          "Sample transcripts from multi-speaker test recordings",
+          "System architecture document"
+        ],
+        "evaluationCriteria": [
+          "DER on evaluation recordings (35%)",
+          "Handling of overlapping speech (25%)",
+          "Scalability to longer recordings (20%)",
+          "Transcript readability and formatting (20%)"
+        ]
+      },
+      {
+        "id": "d2-p4",
+        "title": "Spectrum Sensing for Cognitive Radio",
+        "description": "Radio spectrum is scarce. Design a cognitive radio system that senses the radio environment, detects primary user activity, and dynamically selects idle frequency bands for secondary use.",
+        "objectives": [
+          "Implement energy detection and cyclostationary feature detection algorithms",
+          "Simulate a primary user activity model across multiple channels",
+          "Build a decision engine that selects the optimal channel for transmission",
+          "Evaluate detection probability and false alarm rate under varying SNR"
+        ],
+        "deliverables": [
+          "Simulation environment source code",
+          "ROC curves for the detection algorithms",
+          "Channel selection performance analysis",
+          "Report on practical deployment considerations"
+        ],
+        "evaluationCriteria": [
+          "Detection performance at low SNR (35%)",
+          "Sensing latency and channel switch time (25%)",
+          "Quality of simulation environment (25%)",
+          "Depth of analysis and documentation (15%)"
+        ]
+      },
+      {
+        "id": "d2-p5",
+        "title": "Retinal Disease Screening from Fundus Images",
+        "description": "Diabetic retinopathy is a leading cause of preventable blindness. Build a deep learning system that screens fundus photographs for signs of diabetic retinopathy and grades their severity.",
+        "objectives": [
+          "Preprocess and augment a fundus image dataset for training",
+          "Fine-tune or train a CNN architecture for multi-class grading",
+          "Implement Grad-CAM for explainable visualizations of model decisions",
+          "Deploy as a web app where clinicians can upload an image and receive a graded report"
+        ],
+        "deliverables": [
+          "Trained model weights and training code",
+          "Grading accuracy and confusion matrix on a test set",
+          "Grad-CAM visualizations for sample predictions",
+          "Clinical-facing web application"
+        ],
+        "evaluationCriteria": [
+          "Grading accuracy and Cohen's kappa (35%)",
+          "Quality and interpretability of Grad-CAM maps (25%)",
+          "Clinical utility of the web interface (25%)",
+          "Code quality and reproducibility (15%)"
+        ]
+      }
+    ]
+  }
+]

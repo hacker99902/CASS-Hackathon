@@ -1,0 +1,114 @@
+{
+  "name": "IEEE CASS Hackathon 2026",
+  "shortName": "CASS Hack 2026",
+  "tagline": "Build Solutions. Solve Real Problems.",
+  "description": "A 24-hour national-level hackathon organized by the IEEE Circuits and Systems Society. Tackle real-world engineering challenges across two focused domains.",
+  "registrationUrl": "https://unstop.com/hackathons/ieee-cass-hackathon-2026",
+  "contactEmail": "hackathon@ieeecass.org",
+  "socialLinks": {
+    "linkedin": "https://linkedin.com/company/ieee-cass",
+    "twitter": "https://twitter.com/ieeecass",
+    "instagram": "https://instagram.com/ieeecass",
+    "contactEmail": "satishmalladad02@gmail.com",
+    "contactPhone": "+91 7259432125"
+  },
+  "stats": [
+    { "value": 24, "suffix": " Hrs", "label": "Non-Stop Hacking" },
+    { "value": 2, "suffix": "", "label": "Focused Domains" },
+    { "value": 10, "suffix": "", "label": "Problem Statements" },
+    { "value": 100, "suffix": "+", "label": "Participants" }
+  ],
+  "timeline": [
+    { "id": 1, "event": "Registration Opens", "date": "Jan 15, 2026", "description": "Portal opens on Unstop. Form your team and register early." },
+    { "id": 2, "event": "Registration Closes", "date": "Feb 10, 2026", "description": "Last date to register. No entries accepted after this." },
+    { "id": 3, "event": "Hackathon Begins", "date": "Feb 22, 2026", "description": "Opening ceremony followed by problem statement reveal and hacking sprint." },
+    { "id": 4, "event": "Submission Deadline", "date": "Feb 23, 2026", "description": "All prototypes, documentation, and presentations must be submitted." },
+    { "id": 5, "event": "Evaluation Round", "date": "Feb 23, 2026", "description": "Expert panel reviews and scores all submissions against defined criteria." },
+    { "id": 6, "event": "Results Announced", "date": "Feb 24, 2026", "description": "Winners are announced at the closing ceremony with prize distribution." }
+  ],
+  "prizes": [
+    {
+      "rank": "Winner",
+      "amount": "₹50,000",
+      "icon": "trophy",
+      "highlight": true
+    },
+    {
+      "rank": "Runner Up",
+      "amount": "₹30,000",
+      "icon": "medal",
+      "highlight": false
+    },
+    {
+      "rank": "Second Runner Up",
+      "amount": "₹15,000",
+      "icon": "award",
+      "highlight": false
+    }
+  ],
+  "additionalBenefits": [
+    "Merit Certificates for all participants",
+    "1-on-1 Mentorship from industry experts",
+    "Exclusive networking with IEEE members",
+    "Fast-track internship referrals"
+  ],
+  "sponsors": [
+    { "name": "Sponsor Alpha", "tier": "platinum" },
+    { "name": "Sponsor Beta", "tier": "gold" },
+    { "name": "Sponsor Gamma", "tier": "gold" },
+    { "name": "Sponsor Delta", "tier": "silver" },
+    { "name": "Sponsor Epsilon", "tier": "silver" },
+    { "name": "Sponsor Zeta", "tier": "silver" }
+  ],
+  "faq": [
+    {
+      "question": "Who can participate?",
+      "answer": "The hackathon is open to all undergraduate and postgraduate engineering students from recognized institutions across India. Participants must be current IEEE student members or willing to register as one."
+    },
+    {
+      "question": "What is the team size?",
+      "answer": "Teams must consist of 2 to 4 members. Solo registrations are not accepted. All team members must be from the same institution unless special permission is granted by the organizing committee."
+    },
+    {
+      "question": "Is there a registration fee?",
+      "answer": "Registration is completely free for all IEEE student members. Non-members can register by becoming an IEEE student member, which carries a nominal annual fee."
+    },
+    {
+      "question": "How are submissions evaluated?",
+      "answer": "Submissions are evaluated on four parameters: technical innovation (30%), problem relevance (25%), prototype completeness (25%), and presentation clarity (20%). A panel of industry and academic experts conducts the evaluation."
+    },
+    {
+      "question": "Are beginners allowed?",
+      "answer": "Absolutely. The hackathon is designed to be inclusive. Beginners are encouraged to participate and will have access to pre-event workshops, mentors throughout the event, and guidance sessions from senior IEEE members."
+    },
+    {
+      "question": "What resources are provided during the hackathon?",
+      "answer": "Participants will have access to cloud credits, development toolkits, datasets relevant to the problem statements, meals, and 24-hour technical support from mentors."
+    }
+  ],
+  "resultsAnnounced": false,
+  "results": {
+    "winner": {
+      "teamName": "Team Placeholder",
+      "members": ["Member One", "Member Two", "Member Three"],
+      "project": "Project Title",
+      "institution": "Institution Name"
+    },
+    "runnerUp": {
+      "teamName": "Team Placeholder",
+      "members": ["Member One", "Member Two"],
+      "project": "Project Title",
+      "institution": "Institution Name"
+    },
+    "secondRunnerUp": {
+      "teamName": "Team Placeholder",
+      "members": ["Member One", "Member Two", "Member Three", "Member Four"],
+      "project": "Project Title",
+      "institution": "Institution Name"
+    },
+    "specialMentions": [
+      { "teamName": "Team Placeholder", "project": "Project Title", "award": "Best Innovation" },
+      { "teamName": "Team Placeholder", "project": "Project Title", "award": "Best UI/UX" }
+    ]
+  }
+}

@@ -1,0 +1,242 @@
+.page {
+  min-height: 100vh;
+  background: var(--bg-base);
+}
+
+.hero {
+  padding-top: 120px;
+  padding-bottom: var(--space-16);
+  text-align: center;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 13px;
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-bottom: var(--space-8);
+  transition: color var(--transition-fast);
+}
+
+.backLink:hover {
+  color: var(--text-secondary);
+}
+
+/* Pending state */
+.pending {
+  padding: var(--space-24) 0;
+  text-align: center;
+}
+
+.pendingIcon {
+  width: 64px;
+  height: 64px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-6);
+  color: var(--text-muted);
+}
+
+.pendingTitle {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
+  margin-bottom: var(--space-3);
+}
+
+.pendingText {
+  font-size: 15px;
+  color: var(--text-secondary);
+  max-width: 420px;
+  margin: 0 auto var(--space-8);
+  line-height: 1.7;
+}
+
+.notifyBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 12px 24px;
+  background: var(--ieee-blue);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.notifyBtn:hover {
+  background: var(--ieee-blue-bright);
+  transform: translateY(-1px);
+}
+
+/* Results state */
+.results {
+  padding: var(--space-16) 0;
+}
+
+.podium {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr 1fr;
+  gap: var(--space-5);
+  margin-bottom: var(--space-12);
+  align-items: end;
+}
+
+.resultCard {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8) var(--space-6);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.resultCardWinner {
+  background: linear-gradient(160deg, var(--bg-elevated), var(--bg-surface));
+  border-color: var(--ieee-blue-border);
+  padding: var(--space-10) var(--space-8);
+}
+
+.rankBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-2);
+}
+
+.rankWinner {
+  background: var(--ieee-blue-dim);
+  color: var(--ieee-blue-bright);
+  border: 1px solid var(--ieee-blue-border);
+}
+
+.rankRunner {
+  background: rgba(255,255,255,0.05);
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+}
+
+.teamName {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.teamNameWinner {
+  font-size: 24px;
+}
+
+.project {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  justify-content: center;
+  list-style: none;
+}
+
+.member {
+  font-size: 12px;
+  padding: 3px 10px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  color: var(--text-secondary);
+}
+
+.institution {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Special mentions */
+.mentions {
+  margin-top: var(--space-12);
+  border-top: 1px solid var(--border-subtle);
+  padding-top: var(--space-10);
+}
+
+.mentionsTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-6);
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.mentionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-4);
+}
+
+.mentionCard {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  transition: border-color var(--transition-base);
+}
+
+.mentionCard:hover {
+  border-color: var(--border-default);
+}
+
+.mentionAward {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: var(--space-2);
+}
+
+.mentionTeam {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.mentionProject {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .podium {
+    grid-template-columns: 1fr;
+    align-items: unset;
+  }
+
+  .resultCardWinner {
+    order: -1;
+  }
+}
