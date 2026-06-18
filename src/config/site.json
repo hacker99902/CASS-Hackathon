@@ -5,12 +5,11 @@
   "description": "A 24-hour national-level hackathon organized by the IEEE Circuits and Systems Society. Tackle real-world engineering challenges across two focused domains.",
   "registrationUrl": "https://unstop.com/hackathons/ieee-cass-hackathon-2026",
   "contactEmail": "hackathon@ieeecass.org",
+  "contactPhone": "+91 98765 43210",
   "socialLinks": {
     "linkedin": "https://linkedin.com/company/ieee-cass",
     "twitter": "https://twitter.com/ieeecass",
-    "instagram": "https://instagram.com/ieeecass",
-    "contactEmail": "hackathon@ieeecass.org",
-    "contactPhone": "+91 98765 43210"
+    "instagram": "https://instagram.com/ieeecass"
   },
   "stats": [
     { "value": 24, "suffix": " Hrs", "label": "Non-Stop Hacking" },
