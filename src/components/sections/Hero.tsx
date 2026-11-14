@@ -1,12 +1,14 @@
 "use client";
 
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ExternalLink, ChevronDown } from "lucide-react";
 import styles from "./Hero.module.css";
 import siteConfig from "@/config/site.json";
+import Snowman from "@/components/ui/Snowman";
 
-const HACKATHON_DATE = new Date("2026-02-22T09:00:00+05:30");
+// Change this to your real event start date
+const HACKATHON_DATE = new Date("2026-12-20T09:00:00+05:30");
 
 function pad(n: number) {
   return String(n).padStart(2, "0");
@@ -23,32 +25,29 @@ function getTimeLeft() {
 }
 
 export default function Hero() {
-  const [timeLeft, setTimeLeft] = useState(getTimeLeft());
-  const tick = useCallback(() => setTimeLeft(getTimeLeft()), []);
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
+  });
 
   useEffect(() => {
-    const id = setInterval(tick, 1000);
+    setTimeLeft(getTimeLeft());
+    const id = setInterval(() => setTimeLeft(getTimeLeft()), 1000);
     return () => clearInterval(id);
-  }, [tick]);
+  }, []);
 
   const handleExplore = () => {
     const el = document.querySelector("#domains");
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
-  const items = [
-    { id: "eyebrow" },
-    { id: "title" },
-    { id: "headline" },
-    { id: "meta" },
-    { id: "countdown" },
-    { id: "cta" },
-  ];
-
   return (
     <section className={styles.hero} id="home" aria-label="Hero">
       <div className={styles.circuitBg} aria-hidden="true" />
       <div className={styles.glow} aria-hidden="true" />
+      <Snowman className={styles.snowman} />
 
       <div className="container">
         <div className={styles.content}>

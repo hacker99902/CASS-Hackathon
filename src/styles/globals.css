@@ -1,30 +1,30 @@
 :root {
-  /* Core palette */
-  --bg-base: #0a0a0a;
-  --bg-surface: #111111;
-  --bg-elevated: #161616;
-  --bg-overlay: #1c1c1c;
+  /* Core palette (light) */
+  --bg-base: #ffffff;
+  --bg-surface: #fafafa;
+  --bg-elevated: #f4f4f5;
+  --bg-overlay: #ececee;
 
-  /* IEEE Blue system */
-  --ieee-blue: #006fef;
-  --ieee-blue-bright: #3b8eff;
-  --ieee-blue-dim: rgba(0, 111, 239, 0.15);
-  --ieee-blue-border: rgba(0, 111, 239, 0.3);
+  /* Santa red (primary accent) */
+  --ieee-blue: #d42426;
+  --ieee-blue-bright: #ff5a5c;
+  --ieee-blue-dim: rgba(212, 36, 38, 0.1);
+  --ieee-blue-border: rgba(212, 36, 38, 0.3);
 
-  /* Cyan accent */
-  --cyan: #17c5a2;
-  --cyan-dim: rgba(23, 197, 162, 0.12);
-  --cyan-border: rgba(23, 197, 162, 0.3);
+  /* Holly green (secondary accent) */
+  --cyan: #2fbf71;
+  --cyan-dim: rgba(47, 191, 113, 0.12);
+  --cyan-border: rgba(47, 191, 113, 0.3);
 
   /* Text */
-  --text-primary: #f5f5f5;
-  --text-secondary: #a0a0a0;
-  --text-muted: #606060;
+  --text-primary: #141416;
+  --text-secondary: #4b4b52;
+  --text-muted: #8a8a92;
 
   /* Borders */
-  --border-subtle: rgba(255, 255, 255, 0.06);
-  --border-default: rgba(255, 255, 255, 0.1);
-  --border-strong: rgba(255, 255, 255, 0.18);
+  --border-subtle: rgba(0, 0, 0, 0.07);
+  --border-default: rgba(0, 0, 0, 0.12);
+  --border-strong: rgba(0, 0, 0, 0.22);
 
   /* Spacing scale */
   --space-1: 4px;
@@ -53,10 +53,10 @@
   --radius-xl: 24px;
   --radius-full: 9999px;
 
-  /* Shadows */
-  --shadow-blue: 0 0 60px rgba(0, 111, 239, 0.12);
-  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.5), 0 8px 24px rgba(0, 0, 0, 0.3);
-  --shadow-elevated: 0 2px 8px rgba(0, 0, 0, 0.6), 0 16px 48px rgba(0, 0, 0, 0.4);
+  /* Shadows (light) */
+  --shadow-blue: 0 0 60px rgba(212, 36, 38, 0.12);
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(0, 0, 0, 0.06);
+  --shadow-elevated: 0 2px 8px rgba(0, 0, 0, 0.08), 0 16px 48px rgba(0, 0, 0, 0.1);
 
   /* Transitions */
   --transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
@@ -137,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Selection */
 ::selection {
-  background-color: rgba(0, 111, 239, 0.3);
+  background-color: rgba(212, 36, 38, 0.2);
   color: var(--text-primary);
 }
 
@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--ieee-blue-bright);
+  color: var(--ieee-blue);
   margin-bottom: var(--space-4);
 }
 

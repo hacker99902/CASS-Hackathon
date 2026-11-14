@@ -3,7 +3,7 @@
     "id": "domain-1",
     "title": "Embedded Systems & IoT",
     "shortDescription": "Design intelligent hardware-software systems that interact with the physical world. From edge computing to sensor networks, build solutions that bridge silicon and reality.",
-    "color": "#006FEE",
+    "color": "#d42426",
     "problemStatements": [
       {
         "id": "d1-p1",
@@ -126,7 +126,7 @@
     "id": "domain-2",
     "title": "Signal Processing & AI",
     "shortDescription": "Harness data, signals, and intelligence to solve problems in healthcare, communications, and beyond. Build systems that extract meaning from noise.",
-    "color": "#17C5A2",
+    "color": "#2fbf71",
     "problemStatements": [
       {
         "id": "d2-p1",

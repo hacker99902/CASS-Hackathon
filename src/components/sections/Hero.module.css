@@ -13,8 +13,8 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(0, 111, 239, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 111, 239, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(212, 36, 38, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 36, 38, 0.04) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
   -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
@@ -28,7 +28,7 @@
   transform: translate(-50%, -50%);
   width: 700px;
   height: 500px;
-  background: radial-gradient(ellipse at center, rgba(0, 111, 239, 0.1) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(212, 36, 38, 0.1) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .headlineAccent {
-  background: linear-gradient(135deg, #ffffff 0%, rgba(255,255,255,0.6) 100%);
+  background: linear-gradient(135deg, #141416 0%, #5a5a62 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -157,11 +157,10 @@
 .countSep {
   font-size: 40px;
   font-weight: 300;
-  color: var(--border-default);
+  color: var(--ieee-blue);
   line-height: 1;
   padding-bottom: 24px;
 }
-
 /* CTA Buttons */
 .ctaRow {
   display: flex;
@@ -189,7 +188,7 @@
 .primaryBtn:hover {
   background-color: var(--ieee-blue-bright);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 111, 239, 0.3);
+  box-shadow: 0 8px 24px rgba(212, 36, 38, 0.3);
 }
 
 .secondaryBtn {
@@ -212,7 +211,7 @@
 .secondaryBtn:hover {
   color: var(--text-primary);
   border-color: var(--border-strong);
-  background-color: rgba(255, 255, 255, 0.04);
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 @media (max-width: 600px) {
@@ -238,5 +237,21 @@
   .secondaryBtn {
     width: 100%;
     justify-content: center;
+  }
+}
+
+/* Snowman */
+.snowman {
+  position: absolute;
+  right: clamp(16px, 6vw, 120px);
+  bottom: 40px;
+  width: clamp(110px, 14vw, 190px);
+  height: auto;
+  z-index: 1;
+}
+
+@media (max-width: 1000px) {
+  .snowman {
+    display: none;
   }
 }

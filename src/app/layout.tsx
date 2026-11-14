@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
 import siteConfig from "@/config/site.json";
+import Snowfall from "@/components/ui/Snowfall";
 
 export const metadata: Metadata = {
   title: {
@@ -33,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -41,11 +42,14 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
-        <meta name="theme-color" content="#0a0a0a" />
+        <meta name="theme-color" content="#ffffff" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="manifest" href="/manifest.json" />
       </head>
-      <body>{children}</body>
+      <body suppressHydrationWarning>
+        <Snowfall />
+        {children}
+      </body>
     </html>
   );
 }
